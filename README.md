@@ -1,1 +1,0 @@
-# AMI Course Material
