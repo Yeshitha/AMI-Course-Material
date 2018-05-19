@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BabySpy</title>
+</head>
+<body>
+<h1>AMI BabySpy</h1>
+<p>Welcome to our project</p>
+<p>&copy; BabySpy</p>
+<p><img src="{{ url_for('static', filename="Dambuster.png")  }}"></p>
+
+<form action="{{ url_for('welcome') }}" method="post">
+    <p>Enter Name:
+        <input type="text" name="username"/>
+        <input type="submit" value="Login"/>
+    </p>
+</form>
+
+<p><a href = "{{ url_for('about') }}">About Us</a></p>
+</body>
+</html>
