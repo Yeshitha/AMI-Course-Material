@@ -67,3 +67,9 @@ if __name__ == '__main__':
                 for i in limit:
                     task.remove(i)
             cur4.close()
+
+        else:
+            print('Please select a number bewteen 1 and 4:')
+
+        print('Enter a new number for a new operation:')
+        value = int(input())
