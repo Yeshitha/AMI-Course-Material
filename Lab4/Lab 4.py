@@ -4,7 +4,7 @@ task = []
 
 if __name__ == '__main__':
 
-    connection = pymysql.connect(user = 'root', password = 'root', host = 'localhost', database = 'todolist')
+    connection = pymysql.connect(user='root', password='root', host='localhost', database='todolist')
 
     print('Select the task which you would like to do:')
     print('1. New Task--> 1')
@@ -22,7 +22,7 @@ if __name__ == '__main__':
             print('Enter a description of the task:')
             new_description = str(input())
             sql1 = 'INSERT to todo (id_task, description) VALUES (%s, $s)'
-            cur1.excute(sql1, (new_task,new_description))
+            cur1.excute(sql1, (new_task, new_description))
             connection.commit()
             cur1.close()
 
@@ -63,8 +63,7 @@ if __name__ == '__main__':
             if len(task) == 0:
                 print('The list is already empty!')
             else:
-                limit = len(task)
-                for i in limit:
+                for i in len(task):
                     task.remove(i)
             cur4.close()
 
