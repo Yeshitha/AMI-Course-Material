@@ -12,10 +12,12 @@
 <p>List of Tasks:</p>
 <ul id="list">
     {% for i in value %}
-        <li>
-            {{ i+' ' }}
+        <li id="{{ i }}">
+            {{ i }}
         </li>
-        <a href='delete_task.html'>Delete</a>
+        <form method = "POST" action="delete_task.html">
+            <input type="submit" name="{{ i }}">
+        </form>
     {% endfor %}
 </ul>
 
@@ -23,9 +25,8 @@
 <p>Insert the name of the new task:</p>
 <form method = "POST" action="insert_task.html">
     <input type="text" name="task">
-    <input type="submit" name="Enter">
+    <input type="submit" name="enter">
 </form>
-
 
 
 

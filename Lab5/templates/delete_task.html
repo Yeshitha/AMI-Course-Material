@@ -8,7 +8,13 @@
 <h1>The new lists:</h1>
 <p>List of tasks:</p>
 
-
+<ul>
+    {% for i in value %}
+        <li id="{{ i }}">
+            {{ i }}
+        </li>
+    {% endfor %}
+</ul>
 
 <p><a href='index.html'>TodoList Manager</a></p>
 </body>
