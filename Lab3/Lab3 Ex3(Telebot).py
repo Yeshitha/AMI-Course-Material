@@ -1,21 +1,21 @@
-#from telegram.ext import Updater
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram import ChatAction
 
-token = '573598791:AAF6kiGBOCp5Pc7cMsc1273bKVtjXT5R8sU' #Telegram Token
-
+#key = '573598791:AAF6kiGBOCp5Pc7cMsc1273bKVtjXT5R8sU' Telegram Token
 task = []
 
-print('Welcome!')
-print('todomanager')
-
-def download(path):
+#List Codes
+def download():
     # 'C:\Users\yeshi\Dropbox\Polito\Third Year\Second Semester\Ambient Intelligence\Python Labs\course-materials\Lab2'
-    print(path)
+    Updater.message.reply_text('Input file name:')
+    path = Updater.message.text
     file = open(path, 'r')
     task.extend(file.readlines())
     file.close()
 
-def upload(path):
-    print('Enter the name of the output file:')
+def upload():
+    Updater.message.reply_text('Enter the name of the output file:')
+    path = Updater.message.text
     file = open(path, 'w')
     if len(task) == 0:
         print('List is empty!')
@@ -25,21 +25,20 @@ def upload(path):
     file.close()
 
 def intial():
-    print('1. Insert a new task')
-    print('2. Remove a task')
-    print('3. Show all existing tasks')
-    print('4. Close program')
-    print('Enter the number of the corresponding function:')
+    Updater.message.reply_text('1. Show all the existing tasks?')
+    Updater.message.reply_text('2. Insert a new task:')
+    Updater.message.reply_text('3. Which tasks to remove from the existing tasks?')
+    Updater.message.reply_text('4. The program eliminates the a substring:')
+    Updater.message.reply_text('Please enter a number between:')
 
 def new_task():
-    print('Enter the name of the new task:')
-    item = str(input())
+    Updater.message.reply_text('Name of task to be added:')
+    item = Updater.message.text
     task.append(item)
 
 def remove_task():
-    print('Which task would you like to remove:')
-    item = str(input())
-
+    Updater.message.reply_text('Name the substring to be removed:')
+    item = Updater.message.text
     task_to_remove = []
     for i in task:
         if item in i:
@@ -51,29 +50,52 @@ def remove_task():
 
 def show():
     if len(task) != 0:
-        print(task)
+        for g in task:
+            Updater.message.reply_text(g)
     else:
-        print('The list is empty!')
+        Updater.message.reply_text('The list is empty!')
 
-print('Please enter the name of the file which contains the tasks:')
-name = str(input())
-download(name)
-intial()
 
-while True:
-    x = str(input())
-    if x == '/showTasks':
-        new_task()
-        print('Please enter a number:')
-    elif x == '/newTask':
-        remove_task()
-        print('Please enter a number:')
-    elif x == '/removeTask':
-        show()
-        print('Please enter a number:')
-    elif x == '/removeAllTasks':
-        print('The program will terminate now')
-        upload(name)
-        break
-    else:
-        print('Please enter a number between 1 and 4')
+#Telebot Codes
+def start(bot, update):
+    Updater.message.reply_text("Processing!")
+
+def reply(bot, update):
+    bot.sendChatAction(update.message.chat_id, ChatAction.TYPING)
+    Updater.message.reply_text('Welcome to Todo Manager:')
+    repeat_text = update.message.text
+    download()
+
+
+
+    #Put the right answer
+    #Updater.message.reply_text()
+
+def main():
+    updater = Updater("573598791:AAF6kiGBOCp5Pc7cMsc1273bKVtjXT5R8sU")
+    pong = updater.dispatcher
+    pong.add_handler(CommandHandler("start",start))
+    pong.add_handler(MessageHandler(Filters.text, reply))
+    updater.start_polling()
+    updater.idle
+
+
+if __name__ == "__main__":
+    while True:
+        main()
+        x = Updater.message.text
+        if x == '/showTasks':
+            show()
+            Updater.message.reply_text('Please enter a number:')
+        elif x == '/newTasks':
+            new_task()
+            Updater.message.reply_text('Please enter a number:')
+        elif x == '/removeTasks':
+            remove_task()
+            Updater.message.reply_text('Please enter a number:')
+        elif x == '/removeAllTasks':
+            Updater.message.reply_text('The program will terminate now')
+            upload()
+            break
+        else:
+            Updater.message.reply_text('Please enter a commend from the list:')

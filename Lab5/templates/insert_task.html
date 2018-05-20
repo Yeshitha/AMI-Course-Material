@@ -5,10 +5,11 @@
     <title>Insert Task</title>
 </head>
 <body>
+
 <h1>The new lists:</h1>
 <p>List of tasks:</p>
 
-<ul id="list">
+<ul>
     {% for i in value %}
         <li>
             {{ i+' ' }}
@@ -17,8 +18,7 @@
     {% endfor %}
 </ul>
 
-
-
 <p><a href='index.html'>TodoList Manager</a></p>
+
 </body>
 </html>

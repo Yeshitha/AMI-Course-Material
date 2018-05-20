@@ -1,7 +1,9 @@
 from flask import Flask, redirect, render_template, request
 
 
-task = ['cats', 'dogs', 'birds', 'bees']
+tasks = ['cats', 'dogs', 'birds', 'bees']
+new_task = []
+
 
 app = Flask(__name__)
 
@@ -13,12 +15,17 @@ def hello_world():
 
 @app.route('/index.html')
 def index():
-    return render_template('index.html', value=task)
+    return render_template('index.html', value=tasks)
 
 
-@app.route('/insert_task.html')
+@app.route('/insert_task.html', methods=['POST', 'GET'])
 def insert_task():
-    return render_template('insert_task.html', value=task)
+    if request.method == 'POST':
+        task = request.form['task']
+        new_task.extend(tasks)
+        new_task.extend(task)
+        return render_template('insert_task.html', value=new_task)
+    return render_template('index.html', value=tasks)
 
 
 @app.route('/delete_task.html')
