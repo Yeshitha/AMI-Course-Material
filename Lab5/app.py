@@ -21,15 +21,15 @@ def index():
 @app.route('/insert_task.html', methods=['POST', 'GET'])
 def insert_task():
     if request.method == 'POST':
-        task = request.form['task']
-        new_task.extend(tasks)
-        new_task.extend(task)
-        return render_template('insert_task.html', value=new_task)
+        task = str(request.form['task'])
+        tasks.extend(task)
+        return render_template('insert_task.html', value=tasks)
     return render_template('index.html', value=tasks)
 
 
 @app.route('/delete_task.html')
 def delete_task():
+
     return render_template('delete_task.html')
 
 
