@@ -28,10 +28,9 @@ def insert_task():
 @app.route('/delete_task.html', methods=['POST', 'GET'])
 def delete_task():
     if request.method == 'POST':
-        task = str(request.form['remove'])
+        task = str(request.form['Remove'])
         print(task)
-        #tasks.remove(task)
-        print(tasks)
+        tasks.remove(task)
         return render_template('delete_task.html', value=tasks)
     return render_template('index.html', value=tasks)
 

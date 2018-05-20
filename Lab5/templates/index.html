@@ -15,11 +15,14 @@
         <li id="{{ i }}">
             {{ i }}
         </li>
-        <form method = "POST" action="delete_task.html">
-            <input type="submit" name="{{ i }}">
-        </form>
     {% endfor %}
 </ul>
+
+<p>Insert the name of the task to be removed:</p>
+<form method = "POST" action="delete_task.html">
+    <input type="text" name="Remove">
+    <input type="submit" name="Enter">
+</form>
 
 
 <p>Insert the name of the new task:</p>
