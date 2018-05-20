@@ -10,16 +10,18 @@
 
 
 <p>List of Tasks:</p>
-<p>(Tick the task that need to be deleted)</p>
 <ul id="list">
     {% for i in value %}
-        <li>{{ i+' ' }}<input type="checkbox" name="Delete" value="Delete"></li>
+        <li>
+            {{ i+' ' }}
+        </li>
+        <a href='delete_task.html'>Delete</a>
     {% endfor %}
 </ul>
 
 
 <p>Insert the name of the new task:</p>
-<form action='insertpage.html'>
+<form action='insert_task.html'>
     <input type="text" newtask="task">
     <input type="submit" button="Enter">
 </form>

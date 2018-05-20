@@ -16,10 +16,14 @@ def index():
     return render_template('index.html', value=task)
 
 
-@app.route('/insertpage.html')
-def insertpage():
-    task = request.form()
-    return render_template('insertpage.html')
+@app.route('/insert_task.html')
+def insert_task():
+    return render_template('insert_task.html', value=task)
+
+
+@app.route('/delete_task.html')
+def delete_task():
+    return render_template('delete_task.html')
 
 
 if __name__ == '__main__':
