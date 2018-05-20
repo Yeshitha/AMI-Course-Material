@@ -1,4 +1,7 @@
-from flask import Flask, redirect, render_template, url_for
+from flask import Flask, redirect, render_template, request
+
+
+task = ['cats', 'dogs', 'birds', 'bees']
 
 app = Flask(__name__)
 
@@ -10,7 +13,13 @@ def hello_world():
 
 @app.route('/index.html')
 def index():
-    return render_template('/index.html')
+    return render_template('index.html', value=task)
+
+
+@app.route('/insertpage.html')
+def insertpage():
+    task = request.form()
+    return render_template('insertpage.html')
 
 
 if __name__ == '__main__':
