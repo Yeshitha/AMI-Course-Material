@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf768872-3228-42ad-8ede-fa0a40529efd" name="Default" comment="Adding Lab 5 Flask">
+    <list default="true" id="c42ac201-83ad-441f-a88a-9758fdcf5fd1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/python-lab5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Dambuster Photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Lab3/Lab3 Ex3(Telebot).py" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/Lab3 Ex3(Telebot).py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,32 +17,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Lab5$Lab_5.coverage" NAME="Lab 5 Coverage Results" MODIFIED="1526744262396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Lab5$Lab5.coverage" NAME="Lab5 Coverage Results" MODIFIED="1526773295402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Lab5$Lab5.coverage" NAME="Lab5 Coverage Results" MODIFIED="1526776495890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Flask Main" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Lab 5.py" />
-        <option value="$PROJECT_DIR$/templates/about.html" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/welcome.html" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -61,20 +80,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Flask Class Example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="Flask Class Example" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Lab5" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flask Class Example" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab5" type="b2602c69:ProjectViewProjectNode" />
               <item name="Lab5" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -82,16 +97,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab4/Lab 4.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Flask Example/templates/index.html" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,28 +117,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flask server.Lab5">
-    <configuration name="Lab 5" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Flask Class Example" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lab 5.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Lab5" type="Python.FlaskServer" factoryName="Flask server">
-      <module name="Flask Class Example" />
+      <module name="Lab5" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -139,68 +132,52 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="launchJavascriptDebuger" value="false" />
     </configuration>
-    <list>
-      <item itemvalue="Flask server.Lab5" />
-      <item itemvalue="Python.Lab 5" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Lab 5" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bf768872-3228-42ad-8ede-fa0a40529efd" name="Default" comment="" />
-      <created>1526743189838</created>
+      <changelist id="a8a343c2-f2fe-45df-a303-02c2cbe06f2e" name="Default" comment="" />
+      <created>1526774319339</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1526743189838</updated>
+      <updated>1526774319339</updated>
     </task>
-    <task id="LOCAL-00001" summary="Adding Lab 5">
-      <created>1526751427772</created>
+    <task id="LOCAL-00001" summary="Updating Lab5">
+      <created>1526774537127</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1526751427772</updated>
+      <updated>1526774537127</updated>
     </task>
-    <task id="LOCAL-00002" summary="Adding Class Flask Example">
-      <created>1526752888402</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1526752888402</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="697" height="735" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3290735" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290735" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.30396476" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
+      <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,55 +186,25 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding Lab 5" />
-    <MESSAGE value="Adding Class Flask Example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Class Flask Example" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Lab4/Lab 4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="74" selection-end-line="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lab 5.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/flask/cli.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="892" lean-forward="true" selection-start-line="892" selection-end-line="892" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcome.html">
+    <entry file="file://$PROJECT_DIR$/../Flask Example/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-          <folding>
-            <element signature="e#163#169#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>

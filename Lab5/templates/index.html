@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Todo List Manager</title>
+</head>
+<body>
+<h1>Welcome to the Todo List Manager</h1>
+<p>Here you can find a list of all the exisiting tasks:</p>
+<p>
+    <ul>
+        <li>List of New Tasks</li>
+        <li>{{ name }}</li>
+    </ul>
+</p>
+
+<form action="{{ url_for('index') }}" method="post">
+    <p>Enter the name of the New Task:
+        <input type="text" name="username"/>
+        <input type="submit" value="Enter"/>
+    </p>
+</form>
+
+</body>
+</html>
