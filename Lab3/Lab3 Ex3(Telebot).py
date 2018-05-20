@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from telegram import ChatAction
 
-#key = '573598791:AAF6kiGBOCp5Pc7cMsc1273bKVtjXT5R8sU' Telegram Token
+#Telegram Token not specidfied
 task = []
 
 #List Codes
