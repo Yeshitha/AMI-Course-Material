@@ -65,11 +65,22 @@ def api_create_task():
         return response
 
 
-# Updating a task!
-@app.route()
+# Updating a task! DONE
+@app.route('/tasks/update', methods = ['POST'])
 def api_update():
+    if request.headers['Content-Type'] == 'application/json':
+        update_task = request.json
+        for u in task:
+            if u['name'] == update_task:
+                y = u['task_number']
+        del task[y-1]
+        task.append(update_task)
+        return jsonify(update_task)
+    else:
+        response = jsonify({'message': "Invalid update task request"})
+        response.status_code = 404
+        return response
 
-    return
 
 if __name__ == '__main__':
     app.run()
